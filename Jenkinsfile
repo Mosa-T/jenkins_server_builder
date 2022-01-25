@@ -1,4 +1,4 @@
-pipleline{
+pipleline {
   agent any
   parameters{
     string(name: 'HOSTNAME')
@@ -10,6 +10,5 @@ pipleline{
          build job: 'FileExplorer', parameters: [string(name: 'HOSTNAME', value: params.HOSTNAME), string(name: 'dir', value: params.dir)]
       }
     }
-    
   }
 }
